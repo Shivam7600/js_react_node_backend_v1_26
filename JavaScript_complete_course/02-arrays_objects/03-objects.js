@@ -38,7 +38,7 @@ jsUser.greeting = function () {
 };
 
 jsUser.greeting2 = function () {
-  console.log(`Hello ${this.name}`);
+  console.log(`Hello ${this.name}`); // this -> refers to current object
 };
 
 jsUser.greeting(); // Hello jsUser
