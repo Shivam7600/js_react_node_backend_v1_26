@@ -39,3 +39,26 @@ const myFunction = function () {
 };
 
 console.log(typeof heros, typeof myObj, typeof myFunction);
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+// stack (Primitive) and heap(Non-primitive)
+
+let n1 = "youtube-channel";
+
+let n2 = n1;
+n2 = "youtube-ads";
+
+console.log(n1); // different value in both n1 and n2 due to stack memory
+console.log(n2); // different value in both n1 and n2 due to stack memory
+
+let user1 = {
+  email: "user@google.com",
+  upi: "user@ybl",
+};
+
+let user2 = user1;
+user2.email = "user2@google.com";
+
+console.log(user1); // same value in both user1 and user2 due to heap memory
+console.log(user2); // same value in both user1 and user2 due to heap memory
